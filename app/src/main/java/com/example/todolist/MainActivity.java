@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     private void loadTasks() {
         List<Task> tasks = database.taskDao().getAllTasks();
         adapter = new TaskAdapter(tasks, task -> {
-            // Add code to handle update/delete
         });
         recyclerView.setAdapter(adapter);
     }
